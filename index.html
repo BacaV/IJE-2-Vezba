@@ -10,13 +10,31 @@
     <h2>Понуда дестинација туристичке агенције абц</h2>
 <form name="destinacija">
 <legend>Најлепше плаже</legend>
-<input type="radio" name="dest"    value="halkidiki.jpg">Халкидики<br>
-<input type="radio" name="dest"  value="hercegnovi.jpg">Херцег Нови<br>
-<input type="radio" name="dest"  value="kotor.jpg">Котор<br>
-<input type="radio" name="dest"  value="bar.jpg">Бар<br>
-<input type="radio" name="dest" value="budva.jpg">Будва<br></form>
-<div id="polje"></div>
+<input type="radio" name="dest" onclick="zadatak1()"   value="halkidiki.jpg">Халкидики<br>
+<input type="radio" name="dest" onclick="zadatak1()" value="hercegnovi.jpg">Херцег Нови<br>
+<input type="radio" name="dest" onclick="zadatak1()" value="kotor.jpg">Котор<br>
+<input type="radio" name="dest" onclick="zadatak1()" value="bar.jpg">Бар<br>
+<input type="radio" name="dest" onclick="zadatak1()" value="budva.jpg">Будва<br></form>
+<div id="polje">
+    <img id="slika" src="" >
+</div>
 
+<style>
+    #polje1{display:none;}
+    </style>
+    Занима ме услуга превоза агенције<input type="checkbox" name="prevoz"  onclick="zadatak2()"              ><br>
+    <ul id="polje1">Опције превоза које обезбеђује агенција су:
+    <li>Авионски превоз</li>
+    <li>Превоз аутобусом</li>
+    <li>Услуга изнајмљивања возила</li>
+    </ul>
     
+    Желим да оставим коментар<input type="checkbox" name="komentar"   onclick="zadatak3()"                               ><br>
+
+    <textarea name="kom" id="txt" disabled></textarea>
+    <input type="submit" value="Пошаљи">
+
+
+    <script src="app.js"></script>
 </body>
 </html>
